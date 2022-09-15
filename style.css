@@ -10,7 +10,6 @@
 
 iframe {
     width: 100%;
-    height: 300px;
     border: none;
 }
 
@@ -123,7 +122,6 @@ div.contact-section {
 }
 
 
-
 div.contact-frame {
     position: relative;
     background-color: var(--orange-color);
@@ -157,5 +155,10 @@ table.contact-frame a:hover {
     color: var(--blue-color);
     border: 3px solid var(--blue-color);
 
+}
+
+a.navigation-link {
+    color: var(--blue-color);
+    text-decoration: none;
 }
 
