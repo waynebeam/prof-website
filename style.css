@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: Arial;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -195,11 +196,20 @@ a.navigation-link {
 
 }
 
-.tooltip:hover::before {
+.tooltip:hover::before,
+.tooltip:focus::before  {
     
     transform: scaleX(1);
 }
 
 .other-interests {
     color: var(--blue-color);
+}
+
+.other-skills-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: auto;
 }
