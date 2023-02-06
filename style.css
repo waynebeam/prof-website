@@ -22,7 +22,8 @@ div.header-section {
 
 img.header-image {
     height: 200px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    display: block;
 }
 
 a.header-email {
@@ -42,6 +43,7 @@ a.header-email:hover {
 h1.header-name {
     color:white;
     text-align: center;
+    display: inline-block;
 }
 
 div.separator {
@@ -212,4 +214,30 @@ a.navigation-link {
     justify-content: space-around;
     max-width: 500px;
     margin: auto;
+}
+
+.tooltip-bottom {
+    position: relative;
+
+}
+
+.tooltip-bottom::after {
+    color: white;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    content: attr(tooltip);
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease-in-out;
+    padding: 2px 5px;
+
+}
+
+.tooltip-bottom:hover::after,
+.tooltip-bottom:focus::after  {
+    
+    transform: scaleX(1);
 }
