@@ -195,6 +195,7 @@ a.navigation-link {
     transform-origin: left;
     transition: transform 200ms ease-in-out;
     padding: 2px 5px;
+    width: max-content;
 
 }
 
